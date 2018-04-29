@@ -1,0 +1,34 @@
+body {
+	background-color: #dcd9d9;
+	/*margin-top : 100px;*/
+}
+.container{
+	 margin-top : 100px;
+}
+.form-container	{
+	margin : 0 auto;
+	margin-top : 100px;
+
+}
+
+
+.header	{
+	text-align: center;
+    /*background: #226f73;
+    color: white;*/
+}
+.content{
+	border: 1px solid cadetblue;
+    border-radius: 5px;
+    background: #f8f9f9;
+    padding: 5px;
+}
+.heading{
+	font-style: oblique;
+    color: #008080;
+    text-align: center;
+}
+.navbar-brand.heading{
+	font-style: oblique;
+    color: #008080;
+}

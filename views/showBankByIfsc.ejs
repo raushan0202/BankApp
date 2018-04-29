@@ -1,0 +1,41 @@
+<% include ./partials/header %>
+
+   <div class="container">
+    <div class="row">
+        
+        
+        <div style="margin : 0 auto" >
+              
+              <h1 class="heading">Bank Details </h1>
+             
+             <% if(bank == null ){ %>
+                    <div class="content">
+               			<h3 style="padding: inherit;"> No Bank with provided IFSC </h3>
+                    </div>
+              		  
+             <% } else { %>
+		              <div class="content">
+				              <div class="header">
+				                   <strong><span>IFSC Code : <%= bank.ifsc.toUpperCase(); %> </span>
+				                   <p> <%= bank.bank_name.toUpperCase(); %>,<%= bank.branch.toUpperCase(); %> </p></strong>
+				              </div>
+				              <div>
+				                   <p> <strong>Bank</strong> : <%= bank.bank_name.toUpperCase(); %> </p>
+				                   <p> <strong>Address   </strong>: <%= bank.address %></p>
+				                   <p> <strong>Branch    </strong>: <%= bank.branch %></p>
+				                   <p> <strong>City      </strong>: <%= bank.city %></p>
+				                   <p> <strong>District  </strong>: <%= bank.district %></p>
+				                   <p> <strong>State     </strong>: <%= bank.state %></p>
+				                   <p> <strong>IFSC Code </strong>: <%= bank.ifsc %></p>
+				                   <p> <strong>Bank Id   </strong>: <%= bank.bank_id %></p>
+				              </div>
+		              </div>
+             <% } %>
+
+              
+        </div>
+     </div>
+  </div>
+
+
+<% include ./partials/footer%>
